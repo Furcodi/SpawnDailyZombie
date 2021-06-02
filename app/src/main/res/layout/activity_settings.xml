@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAA12">
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textSettings_text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SettingTextWalker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/SettingTextWalker_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textSettings"
+        app:layout_constraintTop_toBottomOf="@+id/textSettings" />
+
+    <SeekBar
+        android:id="@+id/seekBarWalker"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:max="100"
+        android:min="0"
+        android:thumbTint="#F00000"
+        android:progressTint="#F00000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/SettingTextWalker"
+        app:layout_constraintTop_toBottomOf="@+id/SettingTextWalker" />
+
+    <TextView
+        android:id="@+id/SettingTextRunner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/SettingTextRunner_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/seekBarWalker"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarWalker" />
+
+    <SeekBar
+        android:id="@+id/seekBarRunner"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:min="0"
+        android:thumbTint="#F00000"
+        android:progressTint="#F00000"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarWalker"
+        app:layout_constraintStart_toStartOf="@+id/SettingTextRunner"
+        app:layout_constraintTop_toBottomOf="@+id/SettingTextRunner" />
+
+
+    <TextView
+        android:id="@+id/SettingTextFatty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/SettingTextFatty_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/seekBarRunner"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRunner" />
+
+    <SeekBar
+        android:id="@+id/seekBarFatty"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:min="0"
+        android:thumbTint="#F00000"
+        android:progressTint="#F00000"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarRunner"
+        app:layout_constraintStart_toStartOf="@+id/SettingTextFatty"
+        app:layout_constraintTop_toBottomOf="@+id/SettingTextFatty" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

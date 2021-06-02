@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Spawn Daily Zombie</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="bt_text_spawn_walker">Spawn Walker</string>
+    <string name="bt_text_spawn_fatty">Spawn Fatty</string>
+    <string name="bt_text_spawn_runner">Spawn Runner</string>
+
+    <string name="textSettings_text">Settings</string>
+    <string name="SettingTextWalker_text">Wahrscheinlichkeit Walker</string>
+    <string name="SettingTextRunner_text">Wahrscheinlichkeit Runner</string>
+    <string name="SettingTextFatty_text">Wahrscheinlichkeit Fatty</string>
+
+
+
+
+</resources>
