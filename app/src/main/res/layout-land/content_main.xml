@@ -44,10 +44,17 @@
         app:layout_constraintStart_toStartOf="@+id/button_runner"
         app:layout_constraintTop_toBottomOf="@+id/button_runner"/>
 
-    <ImageView
+    <com.example.dailyspawn.ZoomClass
         android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/f_goth_chick"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_walker"
@@ -55,7 +62,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
@@ -64,7 +71,8 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text=""
-        android:textColor="#DCD939"
+        android:textColor="#B80000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -2,6 +2,7 @@ package com.example.dailyspawn
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.SeekBar
 import android.widget.TextView
@@ -11,6 +12,9 @@ class SettingsActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
+
+        val oneTime = findViewById<CheckBox>(R.id.oneTime)
+        if (MainActivity.cbOneTime) { oneTime.isChecked = true }
 
         val WalkerText = findViewById<TextView>(R.id.SettingTextWalker)
         val WalkerSeek = findViewById<SeekBar>(R.id.seekBarWalker)
@@ -79,11 +83,24 @@ class SettingsActivity  : AppCompatActivity() {
         })
 
 
+        oneTime?.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                MainActivity.cbOneTime = true
+            } else {
+                MainActivity.cbOneTime = false
+                MainActivity.walker_array.clear()
+                MainActivity.runner_array.clear()
+                MainActivity.fatty_array.clear()
+                MainActivity.walker_array += listOf(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)
+                MainActivity.runner_array += listOf(1,2,3,4,5,6)
+                MainActivity.fatty_array += listOf(1,2,3,4,5,6)
+            }
+        }
 
 
     }
 
-    override fun onBackPressed()
+     override fun onBackPressed()
     {
         if(isTaskRoot()){
             val intent = Intent(this, MainActivity::class.java)

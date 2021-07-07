@@ -91,5 +91,18 @@
         app:layout_constraintStart_toStartOf="@+id/SettingTextFatty"
         app:layout_constraintTop_toBottomOf="@+id/SettingTextFatty" />
 
+    <CheckBox
+        android:id="@+id/oneTime"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:buttonTint="#F00000"
+        android:text="@string/SettingTextoneTime_checkbox"
+        android:textColor="#B80000"
+        android:textSize="18sp"
+        android:tooltipText="@string/SettingTextoneTime_tooltip"
+        app:layout_constraintStart_toStartOf="@+id/seekBarFatty"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarFatty" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
